@@ -4,20 +4,10 @@
 #include <math.h>
 #include <ctime>
 
-
-
-
-
-
-
 int main()
 {	
 	srand(time(0));	
-	
- 	
 	sf::RenderWindow window(sf::VideoMode(800,600), "Random Walk");
-	std::cin.get();
-	sf::sleep(sf::seconds(5));
 	//window.setFramerateLimit(120);
 
 	sf::CircleShape circle(1.0f);
@@ -37,7 +27,7 @@ int main()
 		G++;
 		if(G >800)
 		{
-			w.RandomColor(circle);
+			w.RandomColor(circle); // uncomment this for only white colour
 			G = 0;
 		}
 		
